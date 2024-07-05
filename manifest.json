@@ -4,7 +4,7 @@
   "meta": {
     "name": "{name}",
     "dock_button_title": "{name}",
-		"description":"{name} WebApp for Overwolf generated at {now}",
+    "description": "{name} WebApp for Overwolf generated at {now}",
     "author": "minopia.de/ow/webapp-generator",
     "version": "1.0.0",
     "minimum-overwolf-version": "0.77.10",
@@ -15,9 +15,10 @@
   },
   "data": {
     "user_agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36",
-  	"content_scripts": [{ 
-        "matches": ["{url}"], 
-        "js": ["src/redirect.js"]}],
+    "content_scripts": [{
+      "matches": ["{url}"],
+      "js": ["src/redirect.js"]
+    }],
     "start_window": "MainWindow",
     "windows": {
       "MainWindow": {
@@ -29,13 +30,21 @@
         "block_top_window_navigation": "{block_top_window_navigation}",
         "in_game_only": "{in_game_only}",
         "size": {
-          "width": {width},
-          "height": {height}
+          "width": {
+            width
+          },
+          "height": {
+            height
+          }
         },
-				"start_position": {
-					"Top": {top},
-					"Left": {left}
-				}
+        "start_position": {
+          "Top": {
+            top
+          },
+          "Left": {
+            left
+          }
+        }
       }
     },
     "hotkeys": {
