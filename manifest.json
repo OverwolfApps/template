@@ -30,20 +30,12 @@
         "block_top_window_navigation": "{block_top_window_navigation}",
         "in_game_only": "{in_game_only}",
         "size": {
-          "width": {
-            width
-          },
-          "height": {
-            height
-          }
+          "width": {width},
+          "height": {height}
         },
         "start_position": {
-          "Top": {
-            top
-          },
-          "Left": {
-            left
-          }
+          "Top": {top},
+          "Left": {left}
         }
       }
     },
@@ -51,7 +43,7 @@
       "open3": {
         "title": "Show/Hide in-game",
         "category": "Apps",
-        "default": "Alt+W",
+        "default": "{hotkey_toggle}",
         "action-type": "toggle"
       }
     },
