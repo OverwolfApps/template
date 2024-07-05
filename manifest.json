@@ -1,0 +1,53 @@
+{
+  "manifest_version": 1,
+  "type": "WebApp",
+  "meta": {
+    "name": "{name}",
+    "dock_button_title": "{name}",
+		"description":"{description}",
+    "author": "minopia.de/ow/webapp-generator",
+    "version": "1.0.0",
+    "minimum-overwolf-version": "0.77.10",
+    "icon": "icons/IconMouseNormal.png",
+    "icon_gray": "icons/IconMouseNormal.png",
+    "launcher_icon": "icons/IconMouseNormal.ico",
+    "window_icon": "icons/IconMouseNormal.png"
+  },
+  "data": {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36",
+  	"content_scripts": [{ 
+        "matches": ["{url}"], 
+        "js": ["src/redirect.js"]}],
+    "start_window": "MainWindow",
+    "windows": {
+      "MainWindow": {
+        "file": "src/index.html",
+        "transparent": "{transparent}",
+        "grab_keyboard_focus": "true",
+        "show_in_taskbar": "true",
+        "resizable": "{resizable}",
+        "block_top_window_navigation": "{block_top_window_navigation}",
+        "in_game_only": "{in_game_only}",
+        "size": {
+          "width": {width},
+          "height": {height}
+        },
+				"start_position": {
+					"Top": {top},
+					"Left": {left}
+				}
+      }
+    },
+    "hotkeys": {
+      "open3": {
+        "title": "Show/Hide in-game",
+        "category": "Apps",
+        "default": "Alt+W",
+        "action-type": "toggle"
+      }
+    },
+    "game_targeting": {
+      "type": "all"
+    }
+  }
+}

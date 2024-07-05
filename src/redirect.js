@@ -1,0 +1,1 @@
+(async()=>{try{const a=await window.navigator.serviceWorker.getRegistrations();for(const b of a)b.unregister();if (window && (window.location.href.indexOf('count=1')!=-1)) return; setTimeout(() => { let objTitle = document.querySelector('h1.window-title'); if (objTitle && (objTitle.innerText.indexOf("36+") != -1)) window.location.href = '{url}?count=1';}, 20)}catch(a){}})()
