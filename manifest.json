@@ -32,10 +32,10 @@
           "width": {width},
           "height": {height}
         },
-				"start_position": {
-					"Top": {top},
-					"Left": {left}
-				}
+	"start_position": {
+		"Top": {top},
+		"Left": {left}
+	}
       }
     },
     "hotkeys": {
